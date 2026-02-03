@@ -1,0 +1,20 @@
+{
+  "name": "javascript-promises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saxenapriti1008-stack/Javascript-Promises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saxenapriti1008-stack/Javascript-Promises/issues"
+  },
+  "homepage": "https://github.com/saxenapriti1008-stack/Javascript-Promises#readme"
+}

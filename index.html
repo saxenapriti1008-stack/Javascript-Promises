@@ -1,0 +1,40 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip and Advice</title>
+    <script src="path/to/your/typescript/compiled.js"></script>
+    </head>
+<body>
+    <h1>Coin Flip Game</h1>
+    <button id="flipButton">Flip Coin</button>
+    <div id="result"></div>
+    <script>
+        document.getElementById('flipButton')?.addEventListener('click', () => {
+            flipCoin()
+                .then((message) => {
+                    const resultElement = document.getElementById('result');
+                    if (resultElement) {
+                        resultElement.innerText = message;
+                    }
+                    return fetchAdvice();
+                })
+                .then((advice) => {
+                    const resultElement = document.getElementById('result');
+                    if (resultElement) {
+                        resultElement.innerText += `\nAdvice: ${advice}`;
+                    }
+                })
+                .catch((error) => {
+                    const resultElement = document.getElementById('result');
+                    if (resultElement) {
+                        resultElement.innerText = error;
+                    }
+                });
+        });
+    </script>
+</body>
+</html>*/
